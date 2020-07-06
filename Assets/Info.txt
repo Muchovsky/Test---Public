@@ -7,8 +7,11 @@ Projekt przygotowany zgodnie z zaleceniami zadania testowego
 
 w sekcji zielonej zrobiłem to w ramach jednej klasy MainMenu
 
-w sekcji żółtej (nazwanej alternatywną) wykonełem zadanie rozbijając je na wiele klas
+w sekcji żółtej (nazwanej alternatywną) wykonałem zadanie rozbijając je na wiele klas
+W przypadku alternatywnego popupu dodałem pod spód przycisk zamykający – uważam, że ten sposób zamykania na urządzeniach mobilnych jest wygodniejszy)
+Główna różnica między sekcjami występuję w działaniu przycisku Text w sekcji podstawowej wykorzystana jest korutyna natomiast w sekcji alternatywnej wykorzystana jest animacja wraz z efektem pojawiania się i zanikania(fade in, fade out).
+Natomiast w sekcji z dźwiękiem poza zmianą muzyki na dłuższą dodałem przycisk stop do zatrzymania odtwarzania.
 
-Grafiki oraz dźwięk klikniecia pochodzą z paczki https://kenney.itch.io/kenney-game-assets-1
+Grafiki oraz dźwięk kliknięcia pochodzą z paczki https://kenney.itch.io/kenney-game-assets-1
 Muzyka z drugiej sekcji pochodzi z https://freesound.org/people/Jay_You/sounds/460432/
-Szczegółowe licencje są umieszczone w folderze Assets projektu 
+Szczegółowe licencje są umieszczone w folderze Assets projektu
