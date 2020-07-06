@@ -27,7 +27,6 @@ public class MainMenuScript : MonoBehaviour
         textGameObject.SetActive(false);
     }
 
-
     public void OnPopupButtonClicked()
     {
         popupGameObject.SetActive(true);
