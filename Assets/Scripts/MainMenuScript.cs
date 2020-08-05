@@ -18,6 +18,8 @@ public class MainMenuScript : MonoBehaviour
     [SerializeField]
     AudioSource audioSource;
 
+    bool isTextVisible;
+
     private float textShowDuration = 3f;
 
     void Start()
@@ -25,6 +27,8 @@ public class MainMenuScript : MonoBehaviour
         //close aditional gameobjects at the start of game
         popupGameObject.SetActive(false);
         textGameObject.SetActive(false);
+
+        isTextVisible = false;
     }
 
     public void OnPopupButtonClicked()
@@ -34,7 +38,10 @@ public class MainMenuScript : MonoBehaviour
 
     public void OnTextButtonClicked()
     {
-        StartCoroutine(ShowTextCoroutine());
+        if (!isTextVisible)
+        {
+            StartCoroutine(ShowTextCoroutine());
+        }
     }
 
     public void OnSoundButtonClicked()
@@ -45,7 +52,9 @@ public class MainMenuScript : MonoBehaviour
     private IEnumerator ShowTextCoroutine()
     {
         textGameObject.SetActive(true);
+        isTextVisible = true;
         yield return new WaitForSecondsRealtime(textShowDuration);
         textGameObject.SetActive(false);
+        isTextVisible = false;
     }
 }
